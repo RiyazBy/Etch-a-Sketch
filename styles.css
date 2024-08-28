@@ -1,6 +1,7 @@
 .gridContainer {
     box-sizing: border-box;
-    width : 1280px;
+    width : 720px;
+	height : 720px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
