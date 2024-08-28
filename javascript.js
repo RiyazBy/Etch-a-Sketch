@@ -23,7 +23,9 @@ gridCells.forEach(cell => {
 const button = document.querySelector("button");
 button.addEventListener("click", changeGrid);
 function changeGrid() {
-	let input = parseInt(prompt("Enter a number"));
+	let input = 16;
+	do {input = parseInt(prompt("Enter a number"));
+	} while (input > 100);
 	gridCells.forEach(cell => {cell.remove()})
 	for (let i=1; i<=(input**2); i++) {
 		const gridCell = document.createElement("div");
